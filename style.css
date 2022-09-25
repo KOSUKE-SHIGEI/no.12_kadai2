@@ -4,16 +4,21 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
+}
+@media screen and (max-width: 834px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .grid-1 {
   width: 100%;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: repeat(2, 550px);
+  grid-template-columns: repeat(2, 450px);
   grid-template-rows: repeat(2, 280px);
   gap: 40px 300px;
 }
